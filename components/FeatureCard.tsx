@@ -17,7 +17,7 @@ const FeatureCard: React.FC<Props> = ({ icon, name, description }) => {
           className=" "
         />
       </div>
-      <div className="font-libre text-center ">
+      <div className="font-libre text-center pt-4 ">
         <h1 className="text-[22px] font-bold">{name}</h1>
         <h1 className="text-[16px] text-dull">{description}</h1>
       </div>

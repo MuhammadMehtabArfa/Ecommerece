@@ -18,12 +18,12 @@ const services = [
   },
   {
     name: "Online Support",
-    description: "We offer online support to assist our customers",
+    description: "We offer online support ",
     icon: "/images/support.png",
   },
   {
     name: "Best Offer",
-    description: "We provide the best offers to our customers",
+    description: "We provide the best offers ",
     icon: "/images/discount.png",
   },
 ];
