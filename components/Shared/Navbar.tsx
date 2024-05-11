@@ -133,12 +133,12 @@ const Navbar = () => {
           </svg>
         </button>
         {/* search */}
-        <div className="flex rounded-md border border-black bg-gray-200 p-1">
+        <div className="flex rounded-md border border-black px-3 bg-gray-200 py-1">
           <input
             type="text"
             name="search"
             placeholder="Search here"
-            className="w-[200px] outline-none bg-transparent flex-grow"
+            className="w-full outline-none bg-transparent flex-grow"
           />
           <button className="flex items-center justify-center">
             <svg
