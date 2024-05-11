@@ -11,7 +11,7 @@ const SliderFive = () => {
   return (
     <>
       {/* 1st slider */}
-      <div className="w-full">
+      <div className="w-full mt-[60px]">
         <Swiper
           autoplay={{
             delay: 3000,
