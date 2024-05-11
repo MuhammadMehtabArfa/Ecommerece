@@ -25,7 +25,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="hidden lg:flex bg-white  justify-between  px-9 p-3">
+      <div className="hidden xl:flex bg-white  justify-between  px-9 p-3">
         {/* left */}
         <div className="flex gap-[100px]">
           {/* logo */}
@@ -120,7 +120,7 @@ const Navbar = () => {
       </div>
 
       {/* small screens */}
-      <div className="lg:hidden p-3 flex justify-between ">
+      <div className="xl:hidden p-3 flex justify-between ">
         <button className="" onClick={toggleDrawer}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

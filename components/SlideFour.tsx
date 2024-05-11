@@ -11,7 +11,7 @@ const SlideOne: React.FC<Props> = ({ image, image2 }) => {
       <div className="flex border rounded-[20px] border-black shadow overflow-hidden w-full">
         {/* Left side image */}
         <div className="w-1/2">
-          <div className="w-full object-cover h-[500px] relative">
+          <div className="w-full object-cover h-[400px] relative">
             <Image
               src={image} // Double-check path
               alt="image"
