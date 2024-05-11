@@ -4,7 +4,7 @@ import Image from "next/image";
 const Sectionsix = () => {
   return (
     <>
-<h1 className=" font-libre text-[24px] px-[15px] font-bold pt-[40px] pb-[10px] ">Shop by Catagories</h1>
+<h1 className=" font-libre text-lg sm:text-xl md:text-2xl lg:text-3xl px-[15px] font-bold pt-[40px] pb-[10px] ">Shop by Catagories</h1>
       <div className="mb-9 w-full lg:h-[500px] h-auto  grid grid-cols-1 px-[15px] md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
         {/* 1st image */}
         <div className="  rounded-md overflow-hidden h-[500px] gap-14 relative">

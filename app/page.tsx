@@ -7,6 +7,7 @@ import Sectionsix from "@/components/Sectionsix";
 import ReviewSlider from "@/components/ReviewSlider";
 import BlogSlider from "@/components/BlogSlider";
 import Features from "@/components/Features";
+import AboutUs from "@/components/AboutUs";
 export default function Home() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function Home() {
       <ReviewSlider />
       <BlogSlider />
       <Features/>
+      <AboutUs/>
     
     </>
   );

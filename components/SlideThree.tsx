@@ -6,8 +6,8 @@ interface Props {
 }
 const SlideThree: React.FC<Props> = ({ image }) => {
   return (
-    <div className="rounded-xl border w-full shadow-lg flex-col gap-5 ml-4 mt-3">
-      <div className="w-full h-[250px] relative">
+    <div className="rounded-t-xl border w-full shadow-lg flex-col gap-5 ml-4 mt-3">
+      <div className="w-full h-[170px] relative">
         <Image
           alt="image"
           src={image}
@@ -15,8 +15,8 @@ const SlideThree: React.FC<Props> = ({ image }) => {
           className="rounded-t-xl object-cover"
         />
       </div>
-      <div className="flex-col justify-center items-center mt-3 pl-3 gap-2">
-        <div className="mt-5 pt-4 w-[135px] h-[62px] mx-auto relative">
+      <div className="flex flex-col justify-center items-center  pl-3 gap-1">
+        <div className="mt-5  w-[100px] h-[50px] mx-auto relative">
           <Image
             alt="image"
             src="/images/levis.png"
@@ -24,9 +24,13 @@ const SlideThree: React.FC<Props> = ({ image }) => {
             className="rounded-t-xl "
           />
         </div>
-        <div className=" py-5 flex-col text-center ">
-          <h1 className="mb-4 font-libre text-[26px] ">Best of Styles</h1>
-          <h1 className="text-dull text-[16px] ">Under RS.799</h1>
+        <div className=" py-3 flex-col text-center ">
+          <h1 className=" font-libre text-lg md:text-xl lg:text-2xl ">
+            Best of Styles
+          </h1>
+          <h1 className="text-dull text-base md:text-lg lg:text-xl">
+            Under RS.799
+          </h1>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ const data = [
 const App: React.FC = () => {
   return (
     <>
-      <h1 className="text-[35px] pl-9 font-libre mt-6 mb-2 font-bold">
+      <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl pl-9 font-libre mt-6 mb-2 font-bold">
         Deals of the Day
       </h1>
       <div className="mb-5 pl-5">
@@ -30,13 +30,16 @@ const App: React.FC = () => {
               slidesPerView: 1,
               spaceBetween: 20,
             },
-            768: {
-              slidesPerView: 2,
+            450: {
+              slidesPerView: 1.5,
               spaceBetween: 20,
             },
-            
-            1400: {
-              slidesPerView: 3.2,
+            768: {
+              slidesPerView: 2.5,
+              spaceBetween: 20,
+            },
+            1100: {
+              slidesPerView: 3.5,
               spaceBetween: 20,
             },
           }}

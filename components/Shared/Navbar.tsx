@@ -42,7 +42,7 @@ const Navbar = () => {
                   href={link}
                   className={
                     isActive
-                      ? "text-blue-900 bg-slate-200 px-3"
+                      ? "text-blue-900  bg-slate-200 px-3"
                       : "hover:text-blue-900 text-[18px]"
                   }
                 >

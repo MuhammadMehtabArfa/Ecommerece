@@ -8,9 +8,9 @@ interface Props {
 const SlideOne: React.FC<Props> = ({ image, image2 }) => {
   return (
     <>
-      <div className="flex border rounded-[20px] border-black shadow overflow-hidden w-full">
+      <div className="flex flex-row-reverse border rounded-[20px] border-black shadow overflow-hidden w-full">
         {/* Left side image */}
-        <div className="w-1/2">
+        <div className="hidden lg:block w-1/2">
           <div className="w-full object-cover h-[400px] relative">
             <Image
               src={image} // Double-check path
@@ -22,7 +22,7 @@ const SlideOne: React.FC<Props> = ({ image, image2 }) => {
         </div>
 
         {/* Right side with background color */}
-        <div className="w-1/2 flex gap-10 flex-col bg-white p-4">
+        <div className="lg:w-1/2 w-full flex gap-10 flex-col bg-white p-4">
           {/* Logo */}
           <div className="w-1/2 mx-auto h-[78px] mt-[100px] relative">
             <Image
@@ -33,7 +33,7 @@ const SlideOne: React.FC<Props> = ({ image, image2 }) => {
             />
           </div>
           {/* Text */}
-          <div className=" mt-[10px] font-libre text-center text-dull  text-[40px]">
+          <div className=" mt-[10px] font-libre text-center text-dull text-lg sm:text-xl md:text-2xl lg:text-3xl">
             Min 50% off
           </div>
           {/* Button */}

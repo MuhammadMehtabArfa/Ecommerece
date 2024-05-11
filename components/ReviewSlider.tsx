@@ -16,7 +16,7 @@ const data = [
 const ReviewSlider: React.FC = () => {
   return (
     <>
-      <h1 className="text-[35px] pl-9 font-libre mt-6 mb-2 font-bold">
+      <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl pl-9 font-libre mt-6 mb-2 font-bold">
         What our Customers say
       </h1>
       <div className="mb-5 pl-5">

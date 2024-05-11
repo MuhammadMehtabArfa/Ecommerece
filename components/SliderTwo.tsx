@@ -15,7 +15,7 @@ const data = [
 const SliderTwo: React.FC = () => {
   return (
     <>
-      <h1 className="text-[35px] pl-9 font-libre mt-6 mb-2 font-bold">
+      <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl pl-9 font-libre mt-6 mb-2 font-bold">
         Trending Now
       </h1>
       <div className="mb-5 pl-5">
@@ -30,16 +30,16 @@ const SliderTwo: React.FC = () => {
               slidesPerView: 1,
               spaceBetween: 20,
             },
-            768: {
+            450: {
               slidesPerView: 2,
               spaceBetween: 20,
             },
-            1100: {
+            768: {
               slidesPerView: 3,
               spaceBetween: 20,
             },
-            1400: {
-              slidesPerView: 4.3,
+            1100: {
+              slidesPerView: 4.5,
               spaceBetween: 20,
             },
           }}

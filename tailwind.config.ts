@@ -15,6 +15,7 @@ const config: Config = {
         dull: "#565656",
         greend: "#0A8200",
         greenish: "#1A4242",
+        footer: "#00071B",
       },
       fontFamily: {
         libre: "Libre Baskerville",
