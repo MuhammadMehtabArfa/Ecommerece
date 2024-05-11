@@ -30,7 +30,7 @@ const services = [
 const Features = () => {
   return (
     <>
-      <div className="my-6 mt-[40px] mx-4 flex flex-wrap gap-4 justify-around">
+      <div className="my-6 mt-[40px] mx-4  flex flex-wrap gap-4 justify-center">
         {services.map((item, index) => (
           <FeatureCard
             key={index}

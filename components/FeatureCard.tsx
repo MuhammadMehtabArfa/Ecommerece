@@ -8,7 +8,7 @@ interface Props {
 
 const FeatureCard: React.FC<Props> = ({ icon, name, description }) => {
   return (
-    <div className="w-[18%] flex-col align-middle p-5 bg-slate-100  justify-center items-center">
+    <div className="w-[290px] flex-col align-middle p-5 bg-slate-100  justify-center items-center">
       <div className="w-[50px] object-cover h-[50px] mx-auto relative">
         <Image
           src={icon} // Double-check path
