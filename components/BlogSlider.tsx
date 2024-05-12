@@ -16,7 +16,7 @@ const data = [
 const BlogSlider: React.FC = () => {
   return (
     <>
-      <h1 className="text-[35px] pl-9 font-libre mt-8 mb-2 font-bold">
+      <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl pl-9 font-libre mt-8 mb-2 font-bold">
         OUR BLOGS
       </h1>
       <div className="mb-5 pl-5">
@@ -37,8 +37,8 @@ const BlogSlider: React.FC = () => {
               spaceBetween: 20,
             },
 
-            1400: {
-              slidesPerView: 2.5,
+            1100: {
+              slidesPerView: 2.2,
               spaceBetween: 20,
             },
           }}
@@ -57,10 +57,10 @@ const BlogSlider: React.FC = () => {
         </Swiper>
       </div>
       <div className="flex justify-center items-center">
-  <button className="text-[20px] font-bold rounded-md border-2 px-5 py-1 border-black bg-transparent mb-4">
-    Readmore
-  </button>
-</div>
+        <button className="px-3 py-1 text-lg md:text-xl lg:text-2xl rounded-md   border hover:font-bold border-black bg-transparent mx-auto mt-2 md:mt-5 lg:mt-7">
+          Readmore
+        </button>
+      </div>
     </>
   );
 };

@@ -11,17 +11,19 @@ import AboutUs from "@/components/AboutUs";
 export default function Home() {
   return (
     <>
-      <Sliderone />
-      <SliderTwo />
-      <SliderThree />
-      <SliderFour />
-      <SliderFive />
-      <Sectionsix />
-      <ReviewSlider />
-      <BlogSlider />
-      <Features/>
-      <AboutUs/>
-    
+      {" "}
+     
+        <Sliderone/>
+        <SliderTwo />
+        <SliderThree />
+        <SliderFour />
+        <SliderFive />
+        <Sectionsix />
+        <ReviewSlider />
+        <BlogSlider />
+        <Features />
+        <AboutUs />
+      
     </>
   );
 }

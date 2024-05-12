@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      overflow: {
+        'custom-scroll': 'overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200'
+      },
       backgroundImage: {},
       colors: {
         whites: "#F0F0F0",

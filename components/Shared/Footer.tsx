@@ -41,10 +41,10 @@ const Footer = () => {
         {/* images */}
         <div className="flex gap-y-5 gap-4">
           {" "}
-          <div className="w-[60px] h-[50px] relative">
+          <div className="lg:w-[60px] w-[30px] lg:h-[50px] h-[25px] relative">
             <Image alt="logo" src="/images/logowhite.png" layout="fill" />
           </div>
-          <div className="w-[150px] h-[50px] relative">
+          <div className="lg:w-[150px] w-[75px] h-[27px] lg:h-[50px] relative">
             <Image
               alt="logo"
               src="/images/Globex.png"
@@ -103,8 +103,8 @@ const Footer = () => {
         </div>
         <hr className="border border-gray-400 my-4 w-full overflow-hidden"></hr>
         <div className="flex text-white font-libre justify-evenly">
-          <h1 className="sm:text-sm md:text-md lg:text-lg text-sm">@2024 ALL RIGHTS RESERVED</h1>
-          <h1 className="sm:text-sm md:text-md lg:text-lg text-sm"> PRIVACY POLICY</h1>
+          <h1 className="sm:text-sm md:text-base lg:text-lg text-sm">@2024 ALL RIGHTS RESERVED</h1>
+          <h1 className="sm:text-sm md:text-base lg:text-lg text-sm"> PRIVACY POLICY</h1>
         </div>
       </div>
     </>

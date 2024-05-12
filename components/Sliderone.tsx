@@ -15,9 +15,9 @@ const Sliderone = () => {
   return (
     <>
       {isOpen ? (
-        <div className="bg-gray-300   flex justify-between py-2 px-3 ">
+        <div className="bg-gray-300   flex justify-between py-1 px-3 ">
           <div className=" flex gap-[30px] text-center justify center items-center">
-            <h1 className="font-libre text-black">
+            <h1 className="font-libre text-black text-sm">
               Invite Friends and get 50% off on your next purchase{" "}
             </h1>
             <span>

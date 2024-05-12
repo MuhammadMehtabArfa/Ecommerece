@@ -8,7 +8,7 @@ const BlogSlide: React.FC<Props> = ({ image }) => {
     <>
       <div className="flex">
         {/* Left side image */}
-        <div className="w-3/5">
+        <div className="hidden lg:block w-3/5">
           <div className="w-full object-cover h-full  relative">
             <Image
               src={image} // Double-check path
@@ -20,15 +20,17 @@ const BlogSlide: React.FC<Props> = ({ image }) => {
         </div>
 
         {/* Right side with background color */}
-        <div className="w-2/5 font-libre  bg-gray-100  flex-col gap-7 p-4">
+        <div className="lg:w-2/5 w-full font-libre  bg-gray-100 flex flex-col gap-3 p-2">
           {/* heading */}
-          <div className=" text-dull font-libre text-[15px]">Blog</div>
-          <div className="font-bold text-[18px]">
+          <div className="font-libre text-base sm:base md:text-lg lg:text-xl px-[15px] font-bold pt-2  text-dull">
+            Blog
+          </div>
+          <div className="font-bold text-sm sm:sm md:text-base lg:text-lg">
             Discover new way to decorate your home .
           </div>
           {/* Text */}
           <div className="">
-            <h1 className="text-[14px]  text-justify text-dull pt-3">
+            <h1 className="text-sm  text-justify  lg:h-[100px] lg:overflow-auto thinScrollbar text-dull  ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
               labore cum possimus libero asperiores, doloremque error harum
               obcaecati voluptatum eligendi, minima fuga, earum maxime
@@ -45,7 +47,6 @@ const BlogSlide: React.FC<Props> = ({ image }) => {
           </h1>
         </div>
       </div>
-      
     </>
   );
 };
