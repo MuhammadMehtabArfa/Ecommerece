@@ -1,9 +1,7 @@
-"use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import Slidetwo from "./Slidetwo";
-import { Autoplay } from "swiper/modules";
+"use client"
+import React, { useState } from "react";
+import Slidetwo from "@/components/Slidetwo";
+import { Divide } from "lucide-react";
 const data = [
   {
     id: 1,
@@ -191,55 +189,32 @@ const data = [
       { original: "/images/product.png", thumbnail: "/images/product.png" },
     ],
     image: "/images/product.png",
-  },
-];
-const SliderTwo: React.FC = () => {
-  return (
-    <>
-      <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl pl-9 font-libre mt-6 mb-2 font-bold">
-        Trending Now
-      </h1>
-      <div className="mb-5 pl-5">
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            300: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            450: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-            1100: {
-              slidesPerView: 4.5,
-              spaceBetween: 20,
-            },
-          }}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          modules={[Autoplay]}
-          className="mySwiper"
-        >
-          {data.map((item, index) => (
-            <SwiperSlide key={index}>
-              <Slidetwo id={item.id} image={item.image} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </>
-  );
+  },]
+const Filter = () => {
+  const [drawer, setDrawer] = useState(false);
+  const toggleDrawer = () => setDrawer(!drawer);
+  return <>
+  <button className="bg-blue text-white" onClick={toggleDrawer}>Filter</button>
+  <div className="flex w-full">
+
+ {/* Filter */}
+  {drawer && <div className={` ${drawer &&"w-[25%]"} `}>hello</div>}
+ 
+
+ {/* Products */}
+ <div className={`grid  ${drawer ? "lg:grid-cols-3 grid  md:grid-cols-2 grid-cols-1" : "lg:grid-cols-4 md:grid-cols-3  grid-cols-2"} gap-6`}>{data.map((item, index) => (
+           <div key={index} className="  w-full height-auto">
+               <div className=""><Slidetwo image={item.image} id={item.id} /></div>
+             
+           </div>
+         ))}</div>
+
+  </div>
+ 
+ 
+  
+ 
+  </>;
 };
 
-export default SliderTwo;
+export default Filter;

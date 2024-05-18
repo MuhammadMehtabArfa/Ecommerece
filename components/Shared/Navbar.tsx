@@ -13,7 +13,7 @@ const menu: {
   { name: "Men", link: "/" },
   { name: "Women", link: "/women" },
   { name: "Kids", link: "/kids" },
-  { name: "Shop", link: "/shop" },
+  { name: "Shop", link: "/products" },
   { name: "Contact", link: "/contact" },
 ];
 
@@ -30,19 +30,24 @@ const Navbar = () => {
         <div className="flex gap-[20px]">
           {/* logo */}
           <div className="w-7 h-7 mt-2 relative">
-            <Image src="/images/logo.png" alt="LOGO" layout="fill" className=""/>
+            <Image
+              src="/images/logo.png"
+              alt="LOGO"
+              layout="fill"
+              className=""
+            />
           </div>
           {/* links */}
           <div className="flex gap-[40px] pt-3 font-bold ">
             {menu.map(({ name, link }, index) => {
-              const isActive = activePath.startsWith(link);
+              const isActive = (activePath === link);
               return (
                 <Link
                   key={index}
                   href={link}
                   className={
                     isActive
-                      ? "text-blue-900  bg-slate-200 px-3"
+                      ? "text-blue-900  bg-blue text-white px-3"
                       : "hover:text-blue-900 "
                   }
                 >

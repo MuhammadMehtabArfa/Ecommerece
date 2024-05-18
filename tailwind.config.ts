@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       overflow: {
-        'custom-scroll': 'overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200'
+        "custom-scroll":
+          "overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200",
       },
       backgroundImage: {},
       colors: {
@@ -19,6 +20,7 @@ const config: Config = {
         greend: "#0A8200",
         greenish: "#1A4242",
         footer: "#00071B",
+        blue: "#002482",
       },
       fontFamily: {
         libre: "Libre Baskerville",

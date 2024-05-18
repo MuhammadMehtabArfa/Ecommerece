@@ -1,9 +1,8 @@
 "use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import Slidetwo from "./Slidetwo";
-import { Autoplay } from "swiper/modules";
+import React, { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
+import Gallery from "@/components/ProductDetail/Gallery";
+
 const data = [
   {
     id: 1,
@@ -193,53 +192,26 @@ const data = [
     image: "/images/product.png",
   },
 ];
-const SliderTwo: React.FC = () => {
+
+const id = () => {
+  const [product, setProduct] = useState<any>(null);
+  const productId = useParams();
+  const id = productId.id;
+
+  const filteredProduct = () => {
+    const filteredItem = data.filter((item) => item.id.toString() == `${id}`);
+
+    setProduct(filteredItem[0]);
+  };
+
+  useEffect(() => {
+    filteredProduct();
+  }, [id]);
   return (
     <>
-      <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl pl-9 font-libre mt-6 mb-2 font-bold">
-        Trending Now
-      </h1>
-      <div className="mb-5 pl-5">
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            300: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            450: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-            1100: {
-              slidesPerView: 4.5,
-              spaceBetween: 20,
-            },
-          }}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          modules={[Autoplay]}
-          className="mySwiper"
-        >
-          {data.map((item, index) => (
-            <SwiperSlide key={index}>
-              <Slidetwo id={item.id} image={item.image} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      <Gallery items={product} />
     </>
   );
 };
 
-export default SliderTwo;
+export default id;

@@ -1,10 +1,10 @@
 import React from 'react'
 
-
+import Filter from './Filter'
 
 const page = () => {
   return (
-    <div>page</div>
+    <><Filter/></>
   )
 }
 

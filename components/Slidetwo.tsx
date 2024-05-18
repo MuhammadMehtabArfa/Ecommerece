@@ -1,15 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import { ADStarOutlined } from "@icongo/ad/lib/ADStarOutlined";
+import Link from "next/link";
 interface Props {
   image: string;
+  id:number
 }
-const Slidetwo: React.FC<Props> = ({ image }) => {
+const Slidetwo: React.FC<Props> = ({ image,id }) => {
   return (
-    <div className="rounded-xl border w-full shadow-lg flex-col gap-5 ml-4 mt-3">
+    <Link href={`/product_detail/${id}`} className="rounded-xl border w-full shadow-lg flex-col gap-5 ml-4 mt-3">
       <div className="w-full h-[200px] relative">
         <Image
-          alt="image"
+          alt="image" 
           src={image}
           layout="fill"
           className="rounded-t-xl object-cover"
@@ -40,7 +42,7 @@ const Slidetwo: React.FC<Props> = ({ image }) => {
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
