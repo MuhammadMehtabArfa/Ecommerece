@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from "react";
 import Slidetwo from "@/components/Slidetwo";
-import { Divide } from "lucide-react";
 const data = [
   {
     id: 1,
@@ -202,7 +201,7 @@ const Filter = () => {
  
 
  {/* Products */}
- <div className={`grid  ${drawer ? "lg:grid-cols-3 grid  md:grid-cols-2 grid-cols-1" : "lg:grid-cols-4 md:grid-cols-3  grid-cols-2"} gap-6`}>{data.map((item, index) => (
+ <div className={`grid  ${drawer ? "lg:grid-cols-3 grid justify-between  md:grid-cols-2 grid-cols-1 gap-[70px]" : "lg:grid-cols-4 md:grid-cols-3  grid-cols-2 gap-[50px]"} `}>{data.map((item, index) => (
            <div key={index} className="  w-full height-auto">
                <div className=""><Slidetwo image={item.image} id={item.id} /></div>
              

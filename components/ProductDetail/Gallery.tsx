@@ -4,15 +4,7 @@ import SliderTwo from "@/components/SliderTwo";
 import React, { useState } from "react";
 import ImageGallery from "react-image-gallery";
 
-type Props = {
-  items: {
-    id: number;
-    images: {
-      original: string;
-      thumbnail: string;
-    }[];
-  };
-};
+
 const Gallery = ({ items }: any) => {
   const [isActive, setIsActive] = useState("details");
   return (

@@ -8,7 +8,7 @@ interface Props {
 }
 const Slidetwo: React.FC<Props> = ({ image,id }) => {
   return (
-    <Link href={`/product_detail/${id}`} className="rounded-xl border w-full shadow-lg flex-col gap-5 ml-4 mt-3">
+    <Link href={`/product_detail/${id}`} className="rounded-xl  shadow-black w-full shadow-lg flex-col gap-5 ml-4 mt-3">
       <div className="w-full h-[200px] relative">
         <Image
           alt="image" 
