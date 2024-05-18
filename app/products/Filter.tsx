@@ -193,15 +193,15 @@ const Filter = () => {
   const [drawer, setDrawer] = useState(false);
   const toggleDrawer = () => setDrawer(!drawer);
   return <>
-  <button className="bg-blue text-white" onClick={toggleDrawer}>Filter</button>
+  <button className="bg-blue px-3 py-1 my-3 ml-5 text-white" onClick={toggleDrawer}>Filter</button>
   <div className="flex w-full">
 
  {/* Filter */}
-  {drawer && <div className={` ${drawer &&"w-[25%]"} `}>hello</div>}
+  {drawer && <div className={` ${drawer &&"w-[20%] mx-auto"} `}>hello</div>}
  
 
  {/* Products */}
- <div className={`grid  ${drawer ? "lg:grid-cols-3 grid justify-between  md:grid-cols-2 grid-cols-1 gap-[70px]" : "lg:grid-cols-4 md:grid-cols-3  grid-cols-2 gap-[50px]"} `}>{data.map((item, index) => (
+ <div className={`grid mx-auto ${drawer ? " lg:grid-cols-3 grid justify-between  md:grid-cols-2 grid-cols-1 gap-[30px]" : "lg:grid-cols-4 md:grid-cols-3  grid-cols-2 gap-[20px]"} `}>{data.map((item, index) => (
            <div key={index} className="  w-full height-auto">
                <div className=""><Slidetwo image={item.image} id={item.id} /></div>
              
