@@ -193,13 +193,13 @@ const data = [
   },
 ];
 
-const id = () => {
+const Page = () => {
   const [product, setProduct] = useState<any>(null);
   const productId = useParams();
   const id = productId.id;
 
   const filteredProduct = () => {
-    const filteredItem = data.filter((item) => item.id.toString() == `${id}`);
+    const filteredItem = data.filter((item) => item.id.toString() === `${String(id)}`);
 
     setProduct(filteredItem[0]);
   };
@@ -214,4 +214,4 @@ const id = () => {
   );
 };
 
-export default id;
+export default Page;

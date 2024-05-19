@@ -12,19 +12,19 @@ import AboutUs from "@/components/AboutUs";
 
 export default function Home() {
   return (
-    <>
+    <div className="">
       {" "}
   
         <Sliderone/>
-        <SliderTwo />
-        <SliderThree />
-        <SliderFour />
-        <SliderFive />
-        <Sectionsix />
-        <ReviewSlider />
-        <BlogSlider />
-        <Features />
-        <AboutUs />
-    </>
+       <div className="md:mt-[60px] mt-[40px]"><SliderTwo  /></div> 
+       <div className="md:mt-[60px] mt-[40px]"><SliderThree  /></div> 
+       <div className="md:mt-[60px] mt-[40px]"><SliderFour  /></div> 
+       <div className="md:mt-[60px] mt-[40px]"><SliderFive  /></div> 
+       <div className="md:mt-[60px] mt-[40px]"><Sectionsix  /></div> 
+       <div className="md:mt-[60px] mt-[40px]"><ReviewSlider  /></div> 
+       <div className="md:mt-[60px] mt-[40px]"><BlogSlider  /></div> 
+       <div className="md:mt-[60px] mt-[40px]"><Features  /></div> 
+       <div className="md:mt-[60px] mt-[40px]"><AboutUs  /></div> 
+    </div>
   );
 }
