@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Mail } from "lucide-react";
 import Link from "next/link";
 const categories = [
-    { head: "Women", list: ["Men", "All Women", "All Men", "Skirts", "Shirts"] },
+  { head: "Women", list: ["Men", "All Women", "All Men", "Skirts", "Shirts"] },
   {
     head: "Shirt",
     list: ["Tops", "Jackets", "TShirts", "Shorts", "Jackets"],
@@ -60,8 +60,9 @@ const Footer = () => {
             {categories.map((foot, index) => (
               <div key={index}>
                 <h6 className="footer-head font-bold font-libre text-left">
-                    <Link href="/" className="hover:bg-gray-500 px-2 py-1">{foot.head}</Link>
-                  
+                  <Link href="/" className="hover:bg-gray-500 px-2 py-1">
+                    {foot.head}
+                  </Link>
                 </h6>
                 <ul className="list-none mt-2">
                   {foot.list.map((items, index) => (
@@ -88,7 +89,9 @@ const Footer = () => {
 
               {/* mail portion */}
               <div className="flex border border-white bg-transparent px-2 py-1 gap-3 rounded-md  w-[280px]  ">
-                <Mail color="white" />
+                <div className="">
+                  <Mail color="white" className="h-[40px]" />
+                </div>
                 <input
                   placeholder="Enter Your Mail Here"
                   type="text"
@@ -103,8 +106,13 @@ const Footer = () => {
         </div>
         <hr className="border border-gray-400 my-4 w-full overflow-hidden"></hr>
         <div className="flex text-white font-libre justify-evenly">
-          <h1 className="sm:text-sm md:text-base lg:text-lg text-sm">@2024 ALL RIGHTS RESERVED</h1>
-          <h1 className="sm:text-sm md:text-base lg:text-lg text-sm"> PRIVACY POLICY</h1>
+          <h1 className="sm:text-sm md:text-base lg:text-lg text-sm">
+            @2024 ALL RIGHTS RESERVED
+          </h1>
+          <h1 className="sm:text-sm md:text-base lg:text-lg text-sm">
+            {" "}
+            PRIVACY POLICY
+          </h1>
         </div>
       </div>
     </>
