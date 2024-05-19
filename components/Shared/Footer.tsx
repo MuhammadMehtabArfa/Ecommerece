@@ -95,7 +95,8 @@ const Footer = () => {
                 <input
                   placeholder="Enter Your Mail Here"
                   type="text"
-                  className="text-white border-none outline-none bg-transparent 
+                  className="text-white border-none focus:border-none
+                  focus:ring-0 outline-none bg-transparent 
      "
                   name=""
                   id=""

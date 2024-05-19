@@ -64,7 +64,8 @@ const Navbar = () => {
               type="text"
               name="search"
               placeholder="Search here"
-              className="w-[200px] ring-0 outline-none  bg-transparent  p-1 text-sm "
+              className="w-[200px] ring-0 border-none focus:border-none
+              focus:ring-0 outline-none   bg-transparent  p-1 text-sm "
             />
             <button className="flex items-center justify-center">
               <svg
