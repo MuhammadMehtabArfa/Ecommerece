@@ -225,7 +225,7 @@ const SliderTwo: React.FC = () => {
             },
           }}
           autoplay={{
-            delay: 5000,
+            delay: 6000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}

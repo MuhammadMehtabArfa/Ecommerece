@@ -42,16 +42,14 @@ const Gallery = ({ items }: any) => {
               </div>
             </div>
             <div className="flex mt-4">
-              <select className="border rounded-md px-2 py-1 mr-2">
-                <option>Select Size</option>
+              <select className="border rounded-md px-2  py-1  ">
+                <option> Size </option>
                 <option>S</option>
                 <option>M</option>
                 <option>L</option>
                 <option>XL</option>
               </select>
-              <a href="#" className="text-blue-500 hover:underline">
-                Size Chart{" "}
-              </a>
+              
             </div>
 
             <div className="flex justify-between mt-4">

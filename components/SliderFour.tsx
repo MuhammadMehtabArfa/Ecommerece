@@ -42,7 +42,7 @@ const SliderFour: React.FC = () => {
             },
           }}
           autoplay={{
-            delay: 5000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Navigation]}

@@ -6,8 +6,8 @@ const SlideOne = () => {
     <>
       <div className="flex">
         {/* Left side image */}
-        <div className="hidden lg:block w-1/2">
-          <div className="w-full object-cover h-[400px] relative">
+        <div className="hidden  lg:block w-1/2">
+          <div className="w-full object-cover h-[92dvh] relative">
             <Image
               src="/images/1stslider.png" // Double-check path
               alt="image"
@@ -18,7 +18,7 @@ const SlideOne = () => {
         </div>
 
         {/* Right side with background color */}
-        <div className=" w-full lg:w-1/2 flex gap-10 flex-col bg-[url('/images/herobg.png')] h-[400px] p-4">
+        <div className=" w-full h-[92dvh] lg:w-1/2 flex gap-10 flex-col bg-[url('/images/herobg.png')]  p-4">
           {/* Logo */}
           <div className="w-1/2 mx-auto h-[78px] mt-[100px] relative">
             <Image

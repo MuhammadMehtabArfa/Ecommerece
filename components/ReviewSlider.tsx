@@ -35,17 +35,17 @@ const ReviewSlider: React.FC = () => {
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 1.3,
+              slidesPerView: 1.6,
               spaceBetween: 20,
             },
 
             1100: {
-              slidesPerView: 2,
+              slidesPerView: 2.2,
               spaceBetween: 20,
             },
           }}
           autoplay={{
-            delay: 5000,
+            delay: 7000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Navigation]}
