@@ -10,7 +10,7 @@ const menu: {
   name: string;
   link: string;
 }[] = [
-  { name: "Men", link: "/" },
+  { name: "Home", link: "/" },
  
   { name: "Shop", link: "/products" },
   { name: "Contact", link: "/contact" },
