@@ -206,7 +206,7 @@ const Page = () => {
 
   useEffect(() => {
     filteredProduct();
-  }, [id]);
+  }, [[id]]);
   return (
     <>
       <Gallery items={product} />
