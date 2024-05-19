@@ -1,6 +1,8 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Slidetwo from "@/components/Slidetwo";
+import { Search, PenLine } from "lucide-react";
+
 const data = [
   {
     id: 1,
@@ -188,32 +190,130 @@ const data = [
       { original: "/images/product.png", thumbnail: "/images/product.png" },
     ],
     image: "/images/product.png",
-  },]
+  },
+];
 const Filter = () => {
   const [drawer, setDrawer] = useState(false);
   const toggleDrawer = () => setDrawer(!drawer);
-  return <>
-  <button className="bg-blue px-3 py-1 my-3 ml-5 text-white" onClick={toggleDrawer}>Filter</button>
-  <div className="flex w-full">
+  return (
+    <>
+      <button
+        className="bg-blue px-3 py-1 my-3 ml-5 text-white"
+        onClick={toggleDrawer}
+      >
+        Filter
+      </button>
+      <div className="flex w-full">
+        {/* Filter */}
+        {drawer && (
+          <div
+            className={` ${
+              drawer &&
+              "md:w-[20%] w-[40%] flex px-3 py-3 gap-5 flex-col mx-auto shadow-black shadow-md"
+            } `}
+          >
+            <div className="text-lg flex font-libre justify-between ">
+              <h1 className="font-bold">Filters</h1>
+              <a href="" className="text-base text-blue underline">
+                Clear all
+              </a>
+            </div>
+            {/* brand */}
+            <div className="flex flex-col justify-start ">
+              {" "}
+              <div className="flex justify-between">
+                <h1 className="font-bold font-libre">Brand</h1>
+                <a href="" className="text-base text-blue underline">
+                  <Search className="w-5 h-5" />
+                </a>
+              </div>
+              <div className="flex flex-col gap-1 font-libre">
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Parada</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Gucci</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Forever 24</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Armani</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Nike</label>
+                   
+              </div>
+            </div>
 
- {/* Filter */}
-  {drawer && <div className={` ${drawer &&"w-[20%] mx-auto"} `}>hello</div>}
- 
+            {/* color */}
+            <div className="flex flex-col justify-start ">
+              {" "}
+              <div className="flex justify-between">
+                <h1 className="font-bold font-libre">Color</h1>
+                <a href="" className="text-base text-blue underline">
+                  <Search className="w-5 h-5" />
+                </a>
+              </div>
+              <div className="flex flex-col gap-1 font-libre">
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Red</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Blue</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Black </label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Green</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Other</label>
+                   
+              </div>
+            </div>
 
- {/* Products */}
- <div className={`grid mx-auto ${drawer ? " lg:grid-cols-3 grid justify-between  md:grid-cols-2 grid-cols-1 gap-[30px]" : "lg:grid-cols-4 md:grid-cols-3  grid-cols-2 gap-[20px]"} `}>{data.map((item, index) => (
-           <div key={index} className="  w-full height-auto">
-               <div className=""><Slidetwo image={item.image} id={item.id} /></div>
-             
-           </div>
-         ))}</div>
+            {/* price */}
+           
+            <div className="flex flex-col underline-offset-8  justify-start ">
+              {" "}
+              <div className="flex justify-between">
+                <h1 className="font-bold font-libre">Price</h1>
+                <a href="" className="text-base text-blue underline">
+                  <Search className="w-5 h-5" />
+                </a>
+              </div>
+              <div className="flex flex-col gap-1 font-libre">
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Rs 2000+</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Rs 4000+</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Rs 6000+</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Rs 8000+</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Rs 10000+</label>
+                   
+              </div>
+            </div>
+            {/* discount */}
+            <div className="flex flex-col justify-start ">
+              {" "}
+              <div className="flex justify-between">
+                <h1 className="font-bold font-libre">Discount</h1>
+                <a href="" className="text-base text-blue underline">
+                  <Search className="w-5 h-5" />
+                </a>
+              </div>
+              <div className="flex flex-col  gap-1 font-libre">
+              <label htmlFor=""><input type="checkbox" className="text-black text-sm  focus:ring-0 " name="Parada" id="" /> 20% AND ABOVE</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> 30% AND ABOVE</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> 40% AND ABOVE</label>
+              <label htmlFor=""><input type="checkbox" className="text-black focus:ring-0 text-sm" name="Parada" id="" /> Above 50%</label>
+                   
+              </div>
+            </div>
+          </div>
+        )}
 
-  </div>
- 
- 
-  
- 
-  </>;
+        {/* Products */}
+        <div
+          className={`grid mx-auto ${
+            drawer
+              ? " lg:grid-cols-3 grid justify-between  md:grid-cols-2 grid-cols-1 gap-[30px]"
+              : "lg:grid-cols-4 md:grid-cols-3  grid-cols-2 gap-[20px]"
+          } `}
+        >
+          {data.map((item, index) => (
+            <div key={index} className="  w-full height-auto">
+              <div className="">
+                <Slidetwo image={item.image} id={item.id} />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Filter;

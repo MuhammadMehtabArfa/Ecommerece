@@ -11,8 +11,7 @@ const menu: {
   link: string;
 }[] = [
   { name: "Men", link: "/" },
-  { name: "Women", link: "/women" },
-  { name: "Kids", link: "/kids" },
+ 
   { name: "Shop", link: "/products" },
   { name: "Contact", link: "/contact" },
 ];
@@ -65,7 +64,7 @@ const Navbar = () => {
               type="text"
               name="search"
               placeholder="Search here"
-              className="w-[200px] outline-none bg-transparent  p-1 text-sm "
+              className="w-[200px] ring-0 outline-none  bg-transparent  p-1 text-sm "
             />
             <button className="flex items-center justify-center">
               <svg
