@@ -11,7 +11,7 @@ const menu: {
   link: string;
 }[] = [
   { name: "Home", link: "/" },
- 
+
   { name: "Shop", link: "/products" },
   { name: "Contact", link: "/contact" },
 ];
@@ -24,9 +24,9 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="hidden lg:flex bg-white  justify-between  px-9 pt-2 pb-1">
+      <div className="hidden lg:flex bg-white  justify-between px-5   pt-2 pb-1">
         {/* left */}
-        <div className="flex gap-[20px]">
+        <div className="flex   gap-[20px]">
           {/* logo */}
           <div className="w-7 h-7 mt-2 relative">
             <Image
@@ -39,7 +39,7 @@ const Navbar = () => {
           {/* links */}
           <div className="flex gap-[40px] pt-3 font-bold ">
             {menu.map(({ name, link }, index) => {
-              const isActive = (activePath === link);
+              const isActive = activePath === link;
               return (
                 <Link
                   key={index}
@@ -125,7 +125,7 @@ const Navbar = () => {
       </div>
 
       {/* small screens */}
-      <div className="lg:hidden p-1 flex justify-between ">
+      <div className="lg:hidden px-5 p-1 flex justify-between ">
         <button className="" onClick={toggleDrawer}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +138,7 @@ const Navbar = () => {
           </svg>
         </button>
         {/* search */}
-        <div className="flex rounded-md border border-black px-3 bg-gray-200 py-1">
+        <div className="flex rounded-md border border-black px-3 bg-gray-200 ">
           <input
             type="text"
             name="search"
@@ -163,8 +163,13 @@ const Navbar = () => {
           </button>
         </div>
         {/* logo */}
-        <div className="w-7 h-7 relative">
-          <Image src="/images/logo.png" alt="LOGO" layout="fill" className="" />
+        <div className="w-7 h-7  relative">
+          <Image
+            src="/images/logo.png"
+            alt="LOGO"
+            layout="fill"
+            className="mt-3"
+          />
         </div>
       </div>
       <Drawer
