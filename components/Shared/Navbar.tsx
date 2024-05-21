@@ -143,7 +143,7 @@ const Navbar = () => {
             type="text"
             name="search"
             placeholder="Search here"
-            className="w-full outline-none bg-transparent flex-grow"
+            className="w-full focus:border-none border-none focus:outline-none ring-none focus:ring-0 outline-none bg-transparent flex-grow"
           />
           <button className="flex items-center justify-center">
             <svg
