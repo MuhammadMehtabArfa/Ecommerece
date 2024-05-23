@@ -41,7 +41,7 @@ const SliderFive = () => {
               </div>
 
               {/* Right side with background color */}
-              <div className="w-1/2  flex gap-10 flex-col bg-greenish h-[400px] p-4">
+              <div className="w-full  flex gap-10 flex-col bg-greenish h-[400px] p-4">
                 {/* Logo */}
                 <div className="w-1/2 mx-auto h-[78px] mt-[100px] relative">
                   <Image

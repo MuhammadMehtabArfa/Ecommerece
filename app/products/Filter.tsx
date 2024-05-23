@@ -198,7 +198,7 @@ const Filter = () => {
   return (
     <>
       <button
-        className="bg-blue px-3 py-1 my-3 ml-5 text-white"
+        className="bg-blue hidden md:block px-3 py-1 my-3 ml-5 text-white"
         onClick={toggleDrawer}
       >
         Filter
@@ -209,7 +209,7 @@ const Filter = () => {
           <div
             className={` ${
               drawer &&
-              "md:w-[20%] w-[40%] flex px-3 py-3 gap-5 flex-col mx-auto shadow-black shadow-md"
+              "md:w-[20%] h-[135vh] w-[10%] flex px-3 py-3  gap-5 flex-col mx-auto shadow-black shadow-sm"
             } `}
           >
             <div className="text-lg flex font-libre justify-between ">
